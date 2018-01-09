@@ -1,0 +1,13 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "Discord Bot that playbacks recorded sounds on emoji press",
+  "main": "bot.js",
+  "author": "Jason Rhee",
+  "dependencies": {
+    "discord.io": "woor/discord.io#gateway_v6",
+    "winston": "^2.4.0"
+  },
+  "repository": "https://github.com/RheeJ/discord_emoji_soundboard.git",
+  "license": "MIT"
+}
