@@ -6,6 +6,10 @@
   "author": "Jason Rhee",
   "dependencies": {
     "discord.io": "woor/discord.io#gateway_v6",
+    "expres": "^0.0.5",
+    "express": "^4.16.2",
+    "ffmpeg-binaries": "^3.2.2-3",
+    "utfstring": "^2.0.0",
     "winston": "^2.4.0"
   },
   "repository": "https://github.com/RheeJ/discord_emoji_soundboard.git",
