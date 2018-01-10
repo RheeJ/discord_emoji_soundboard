@@ -47,7 +47,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             if(Number.isInteger(parseInt(args[1]))){
               bot.joinVoiceChannel('400151487394873351', function(err, evt){
                 if(err) return console.error(err);
-                bot.getAudioContext('400151487394873351', function(err, evt){
+                bot.getAudioContext('400151487394873351', function(err, stream){
                   if(err) return console.error(err);
                   fs.createReadStream('hello.mp3').pipe(stream, {end: false});
                 });
