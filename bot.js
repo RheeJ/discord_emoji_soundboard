@@ -45,10 +45,11 @@ bot.on('message', function (user, userID, channelID, message, evt) {
           var emoji_cmp = new RegExp(emoji_ranges.join('|'), 'g')
           if(args[0].replace(emoji_cmp,'') === ''){
             if(Number.isInteger(parseInt(args[1]))){
-              bot.joinVoiceChannel('400151487394873351', function(err, evt){
+              bot.joinVoiceChannel('400501571953098753', function(err, evt){
                 if(err) return console.error(err);
-                bot.getAudioContext('400151487394873351', function(err, stream){
+                bot.getAudioContext('400501571953098753', function(err, stream){
                   if(err) return console.error(err);
+                  logger.info("Play the Sound")
                   fs.createReadStream('hello.mp3').pipe(stream, {end: false});
                 });
               });
